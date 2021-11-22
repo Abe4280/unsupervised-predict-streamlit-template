@@ -63,7 +63,7 @@ def data_preprocessing(subset_size):
 # You are, however, encouraged to change its content.  
 def content_model(movie_list,top_n=10):
     """Performs Content filtering based upon a list of movies supplied
-       by the app user.
+        by the app user.
 
     Parameters
     ----------

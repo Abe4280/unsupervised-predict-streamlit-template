@@ -47,7 +47,7 @@ model=pickle.load(open('resources/models/SVD.pkl', 'rb'))
 
 def prediction_item(item_id):
     """Map a given favourite movie to users within the
-       MovieLens dataset with the same preference.
+        MovieLens dataset with the same preference.
 
     Parameters
     ----------
@@ -102,7 +102,7 @@ def pred_movies(movie_list):
 # You are, however, encouraged to change its content.  
 def collab_model(movie_list,top_n=10):
     """Performs Collaborative filtering based upon a list of movies supplied
-       by the app user.
+        by the app user.
 
     Parameters
     ----------
@@ -136,7 +136,7 @@ def collab_model(movie_list,top_n=10):
     score_series_1 = pd.Series(rank_1).sort_values(ascending = False)
     score_series_2 = pd.Series(rank_2).sort_values(ascending = False)
     score_series_3 = pd.Series(rank_3).sort_values(ascending = False)
-     # Appending the names of movies
+    # Appending the names of movies
     listings = score_series_1.append(score_series_1).append(score_series_3).sort_values(ascending = False)
     recommended_movies = []
     # Choose top 50
